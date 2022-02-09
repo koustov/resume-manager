@@ -30,11 +30,7 @@ const ComponentTemplate = ({ data }) => {
 
 					<div className={styles['about']}>
 						<span className={styles['position']}>Front-End Developer </span>
-						<span className={styles['desc']}>
-							I am a front-end developer with more than 3 years of experience writing
-							html, css, and js. I'm motivated, result-focused and seeking a successful
-							team-oriented company with opportunity to grow.
-						</span>
+						<span className={styles['desc']}>{data.about}</span>
 					</div>
 				</div>
 				<div className={styles['details']}>
@@ -97,19 +93,13 @@ const ComponentTemplate = ({ data }) => {
 						<div className={styles['section__list']}>
 							<div className={styles['section__list-item']}>
 								<div className={styles['name']}>DSP</div>
-								<div className={styles['text']}>
-									I am a front-end developer with more than 3 years of experience writing
-									html, css, and js. I'm motivated, result-focused and seeking a
-									successful team-oriented company with opportunity to grow.
-								</div>
+								<div className={styles['text']}>{data.about}</div>
 							</div>
 
 							<div className={styles['section__list-item']}>
 								<div className={styles['name']}>DSP</div>
 								<div className={styles['text']}>
-									I am a front-end developer with more than 3 years of experience writing
-									html, css, and js. I'm motivated, result-focused and seeking a
-									successful team-oriented company with opportunity to grow.{' '}
+									{data.about}
 									<a href='/login'>link</a>
 								</div>
 							</div>
@@ -122,41 +112,11 @@ const ComponentTemplate = ({ data }) => {
 								<div className={styles['left']}>
 									<div className={styles['name']}>Javascript</div>
 								</div>
-								<div className={styles['right']}>
-									<input id='ck1' type='checkbox' checked />
-
-									<label for='ck1'></label>
-									<input id='ck2' type='checkbox' checked />
-
-									<label for='ck2'></label>
-									<input id='ck3' type='checkbox' />
-
-									<label for='ck3'></label>
-									<input id='ck4' type='checkbox' />
-									<label for='ck4'></label>
-									<input id='ck5' type='checkbox' />
-									<label for='ck5'></label>
-								</div>
 							</div>
 						</div>
 						<div className={styles['skills__item']}>
 							<div className={styles['left']}>
 								<div className={styles['name']}>CSS</div>
-							</div>
-							<div className={styles['right']}>
-								<input id='ck1' type='checkbox' checked />
-
-								<label for='ck1'></label>
-								<input id='ck2' type='checkbox' checked />
-
-								<label for='ck2'></label>
-								<input id='ck3' type='checkbox' />
-
-								<label for='ck3'></label>
-								<input id='ck4' type='checkbox' />
-								<label for='ck4'></label>
-								<input id='ck5' type='checkbox' />
-								<label for='ck5'></label>
 							</div>
 						</div>
 					</div>
@@ -174,7 +134,7 @@ const ComponentTemplate = ({ data }) => {
 	);
 };
 const ResumeTemplate = {
-	name: 'Plain',
+	name: 'Simple',
 	description: 'The old school way',
 	component_template: ComponentTemplate,
 	data_template: {},

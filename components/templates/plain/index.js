@@ -4,156 +4,135 @@ import { AllSocialEntries } from 'constants/social';
 import ContainerEdtitable from '@/components/content-editable';
 const ComponentTemplate = ({ data }) => {
 	return (
-		<div class='container'>
-			<div class='header'>
-				<div class='full-name'>
-					<span class='first-name'>John</span>
-					<span class='last-name'>Doe</span>
+		<div className={styles['container']}>
+			<div className={styles['header']}>
+				<div className={styles['full-name']}>
+					<span className={styles['first-name']}>John</span>
+					<span className={styles['last-name']}>Doe</span>
 				</div>
-				<div class='contact-info'>
-					<span class='email'>Email: </span>
-					<span class='email-val'>john.doe@gmail.com</span>
-					<span class='separator'></span>
-					<span class='phone'>Phone: </span>
-					<span class='phone-val'>111-222-3333</span>
+				<div className={styles['contact-info']}>
+					<span className={styles['email']}>Email: </span>
+					<span className={styles['email-val']}>john.doe@gmail.com</span>
+					<span className={styles['separator']}></span>
+					<span className={styles['phone']}>Phone: </span>
+					<span className={styles['phone-val']}>111-222-3333</span>
 				</div>
 
-				<div class='about'>
-					<span class='position'>Front-End Developer </span>
-					<span class='desc'>
+				<div className={styles['about']}>
+					<span className={styles['position']}>Front-End Developer </span>
+					<span className={styles['desc']}>
 						I am a front-end developer with more than 3 years of experience writing
-						html, css, and js. I'm motivated, result-focused and seeking a successful
+						html, css, and js. I am motivated, result-focused and seeking a successful
 						team-oriented company with opportunity to grow.
 					</span>
 				</div>
 			</div>
-			<div class='details'>
-				<div class='section'>
-					<div class='section__title'>Experience</div>
-					<div class='section__list'>
-						<div class='section__list-item'>
-							<div class='left'>
-								<div class='name'>KlowdBox</div>
-								<div class='addr'>San Fr, CA</div>
-								<div class='duration'>Jan 2011 - Feb 2015</div>
+			<div className={styles['details']}>
+				<div className={styles['section']}>
+					<div className={styles['section__title']}>Experience</div>
+					<div className={styles['section__list']}>
+						<div className={styles['section__list-item']}>
+							<div className={styles['left']}>
+								<div className={styles['name']}>KlowdBox</div>
+								<div className={styles['addr']}>San Fr, CA</div>
+								<div className={styles['duration']}>Jan 2011 - Feb 2015</div>
 							</div>
-							<div class='right'>
-								<div class='name'>Fr developer</div>
-								<div class='desc'>did This and that</div>
-							</div>
-						</div>
-						<div class='section__list-item'>
-							<div class='left'>
-								<div class='name'>Akount</div>
-								<div class='addr'>San Monica, CA</div>
-								<div class='duration'>Jan 2011 - Feb 2015</div>
-							</div>
-							<div class='right'>
-								<div class='name'>Fr developer</div>
-								<div class='desc'>did This and that</div>
+							<div className={styles['right']}>
+								<div className={styles['name']}>Fr developer</div>
+								<div className={styles['desc']}>did This and that</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class='section'>
-					<div class='section__title'>Education</div>
-					<div class='section__list'>
-						<div class='section__list-item'>
-							<div class='left'>
-								<div class='name'>Sample Institute of technology</div>
-								<div class='addr'>San Fr, CA</div>
-								<div class='duration'>Jan 2011 - Feb 2015</div>
+						<div className={styles['section__list-item']}>
+							<div className={styles['left']}>
+								<div className={styles['name']}>Akount</div>
+								<div className={styles['addr']}>San Monica, CA</div>
+								<div className={styles['duration']}>Jan 2011 - Feb 2015</div>
 							</div>
-							<div class='right'>
-								<div class='name'>Fr developer</div>
-								<div class='desc'>did This and that</div>
-							</div>
-						</div>
-						<div class='section__list-item'>
-							<div class='left'>
-								<div class='name'>Akount</div>
-								<div class='addr'>San Monica, CA</div>
-								<div class='duration'>Jan 2011 - Feb 2015</div>
-							</div>
-							<div class='right'>
-								<div class='name'>Fr developer</div>
-								<div class='desc'>did This and that</div>
+							<div className={styles['right']}>
+								<div className={styles['name']}>Fr developer</div>
+								<div className={styles['desc']}>did This and that</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class='section'>
-					<div class='section__title'>Projects</div>
-					<div class='section__list'>
-						<div class='section__list-item'>
-							<div class='name'>DSP</div>
-							<div class='text'>
-								I am a front-end developer with more than 3 years of experience writing
-								html, css, and js. I'm motivated, result-focused and seeking a
-								successful team-oriented company with opportunity to grow.
+				<div className={styles['section']}>
+					<div className={styles['section__title']}>Education</div>
+					<div className={styles['section__list']}>
+						<div className={styles['section__list-item']}>
+							<div className={styles['left']}>
+								<div className={styles['name']}>Sample Institute of technology</div>
+								<div className={styles['addr']}>San Fr, CA</div>
+								<div className={styles['duration']}>Jan 2011 - Feb 2015</div>
 							</div>
+							<div className={styles['right']}>
+								<div className={styles['name']}>Fr developer</div>
+								<div className={styles['desc']}>did This and that</div>
+							</div>
+						</div>
+						<div className={styles['section__list-item']}>
+							<div className={styles['left']}>
+								<div className={styles['name']}>Akount</div>
+								<div className={styles['addr']}>San Monica, CA</div>
+								<div className={styles['duration']}>Jan 2011 - Feb 2015</div>
+							</div>
+							<div className={styles['right']}>
+								<div className={styles['name']}>Fr developer</div>
+								<div className={styles['desc']}>did This and that</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className={styles['section']}>
+					<div className={styles['section__title']}>Projects</div>
+					<div className={styles['section__list']}>
+						<div className={styles['section__list-item']}>
+							<div className={styles['name']}>DSP</div>
+							<div className={styles['text']}>{data.about}</div>
 						</div>
 
-						<div class='section__list-item'>
-							<div class='name'>DSP</div>
-							<div class='text'>
-								I am a front-end developer with more than 3 years of experience writing
-								html, css, and js. I'm motivated, result-focused and seeking a
-								successful team-oriented company with opportunity to grow.{' '}
+						<div className={styles['section__list-item']}>
+							<div className={styles['name']}>DSP</div>
+							<div className={styles['text']}>
+								{data.about}
 								<a href='/login'>link</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class='section'>
-					<div class='section__title'>Skills</div>
-					<div class='skills'>
-						<div class='skills__item'>
-							<div class='left'>
-								<div class='name'>Javascript</div>
+				<div className={styles['section']}>
+					<div className={styles['section__title']}>Skills</div>
+					<div className={styles['skills']}>
+						<div className={styles['skills__item']}>
+							<div className={styles['left']}>
+								<div className={styles['name']}>Javascript</div>
 							</div>
-							<div class='right'>
+							<div className={styles['right']}>
 								<input id='ck1' type='checkbox' checked />
 
-								<label for='ck1'></label>
+								<label></label>
 								<input id='ck2' type='checkbox' checked />
 
-								<label for='ck2'></label>
+								<label></label>
 								<input id='ck3' type='checkbox' />
 
-								<label for='ck3'></label>
+								<label></label>
 								<input id='ck4' type='checkbox' />
-								<label for='ck4'></label>
+								<label></label>
 								<input id='ck5' type='checkbox' />
-								<label for='ck5'></label>
+								<label></label>
 							</div>
 						</div>
 					</div>
-					<div class='skills__item'>
-						<div class='left'>
-							<div class='name'>CSS</div>
-						</div>
-						<div class='right'>
-							<input id='ck1' type='checkbox' checked />
-
-							<label for='ck1'></label>
-							<input id='ck2' type='checkbox' checked />
-
-							<label for='ck2'></label>
-							<input id='ck3' type='checkbox' />
-
-							<label for='ck3'></label>
-							<input id='ck4' type='checkbox' />
-							<label for='ck4'></label>
-							<input id='ck5' type='checkbox' />
-							<label for='ck5'></label>
+					<div className={styles['skills__item']}>
+						<div className={styles['left']}>
+							<div className={styles['name']}>CSS</div>
 						</div>
 					</div>
 				</div>
-				<div class='section'>
-					<div class='section__title'>Interests</div>
-					<div class='section__list'>
-						<div class='section__list-item'>Football, programming.</div>
+				<div className={styles['section']}>
+					<div className={styles['section__title']}>Interests</div>
+					<div className={styles['section__list']}>
+						<div className={styles['section__list-item']}>Football, programming.</div>
 					</div>
 				</div>
 			</div>

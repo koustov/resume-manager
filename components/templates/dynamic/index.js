@@ -16,7 +16,7 @@ const ComponentTemplate = ({ data }) => {
 						</div>
 						<div className={styles['objective']}>
 							<img
-								className={[styles.img]}
+								// className={[styles.img]}
 								className={`${styles['img']} ${styles['objective-img']}`}
 								src='https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png'
 							/>
@@ -26,7 +26,7 @@ const ComponentTemplate = ({ data }) => {
 						</div>
 						<div className={styles['phone']}>
 							<img
-								className={[styles.img]}
+								// className={[styles.img]}
 								className={styles['objective-img']}
 								src='http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png'
 							/>
@@ -43,7 +43,7 @@ const ComponentTemplate = ({ data }) => {
 						</div>
 						<div className={styles['email']}>
 							<img
-								className={[styles.img]}
+								// className={[styles.img]}
 								className={styles['objective-img']}
 								src='http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png'
 							/>

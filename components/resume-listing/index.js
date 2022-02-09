@@ -63,7 +63,7 @@ const ResumeListing = () => {
 										item
 										xs={2}
 										key={ki}
-										className={styles.snip1527}
+										// className={styles.snip1527}
 										className='glass-button'>
 										<div className={styles.container}>
 											<div className={styles['rating-container']}>

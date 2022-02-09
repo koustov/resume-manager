@@ -25,9 +25,7 @@ const ComponentTemplate = ({ data }) => {
 							iftikharrasha@gmail.com
 							<br />
 							<br />
-							<a href='https://www.fiverr.com/iftikharrasha' target='_blank'>
-								My Fiverr Account
-							</a>
+							<a href='https://www.fiverr.com/iftikharrasha'>My Fiverr Account</a>
 						</p>
 					</div>
 					<div className={styles['br']}></div>

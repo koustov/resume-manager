@@ -58,7 +58,7 @@ const ComponentTemplate = ({ data }) => {
 						</div>
 						<div className={[styles.resume_item, styles.resume_skills]}>
 							<div className={styles.title}>
-								<p className={styles.bold}>skill's</p>
+								<p className={styles.bold}>Skills</p>
 							</div>
 							<ul>
 								<li>
