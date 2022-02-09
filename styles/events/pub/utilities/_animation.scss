@@ -1,0 +1,80 @@
+// =============================================================================
+// Animation
+// =============================================================================
+
+// Rotation
+@keyframes rotateClockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Shower Flow
+// @keyframes showerFlow {
+//     0% {
+//         transform: translateY(0%);
+//         opacity: 0;
+//     }
+
+//     10% {
+//         opacity: 1;
+//     }
+
+//     50% {
+//         opacity: 1;
+//     }
+
+//     100% {
+//         opacity: 0;
+//         transform: translateY(80%);
+//     }
+// }
+
+@keyframes showerFlow {
+    $size: 354px;
+
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 $size*2;
+    }
+}
+
+// @keyframes bannerCodeRun {
+//     $size: 77.08px;
+
+//     0% {
+//         background-position: 0 $size*2.07;
+//     }
+
+//     100% {
+//         background-position: 0 0;
+//     }
+// }
+
+@keyframes bannerCodeRun {
+    $size: 124px;
+
+    0% {
+        background-position: 0 $size*2;
+    }
+
+    100% {
+        background-position: 0 ;
+    }
+}
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

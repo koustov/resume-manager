@@ -1,0 +1,104 @@
+// Page Header - Episode Details
+// ----------------------------------
+
+.page-nav {
+    background-color: $color-primary;
+    min-height: 100vh;
+
+    // Header - Title
+    &-title {
+        &__link {
+            @include simple-transition(2x);
+            display: block;
+            width: 126px;
+            height: 36px;
+            margin: 0;
+            background: transparent url(../../../images/uifocus/logo-uifocus.svg) no-repeat center;
+            background-size: contain;
+
+            @include breakpoint(md) {
+                display: none;
+            }
+        }
+
+        &__tagline {
+            position: relative;
+            left: 50%;
+            margin: 12px $spacer-sm;
+            font-family: $font-family-primary;
+            font-size: $theme-fs-xs;
+            font-weight: $theme-fw-light;
+            color: $color-white;
+            letter-spacing: 0.04em;
+
+            @include breakpoint(md) {
+                z-index: 1;
+            }
+        }
+    }
+}
+
+
+// Page Header Content
+.page-header__content {
+    
+}
+
+// 404 Page
+// .page-header--404 {
+//     .page-header__content {
+//         grid-template-columns: 1fr;
+//         justify-items: center;
+
+//         .content-title {
+//             width: 100%;
+//             height: 32vh;
+//         }
+
+//         .content-desc--lead {
+//             margin-top: $spacer-nm;
+//             font-family: $font-family-secondary;
+//             font-size: $theme-fs-xxl;
+//             color: $color-tertiary;
+//             text-shadow: 3px -4px 0 $color-black;
+//             text-align: center;
+//             line-height: 1;
+//         }
+
+//         .content-desc {
+//             font-family: $font-family-primary;
+//             color: $color-white;
+//         }
+
+//         .content-anchor {
+//             position: relative;
+//             display: inline-block;
+//             margin-bottom: $spacer-md;
+//             padding: $spacer-nm 0 0 0;
+//             font-family: $font-family-secondary;
+//             text-decoration: none;
+//             color: $color-white;
+
+//             &:before {
+//                 @include simple-transition(2x);
+//                 position: absolute;
+//                 content: "";
+//                 width: 100%;
+//                 height: 3px;
+//                 bottom: 0px;
+//                 background-color: $color-primary-bright;
+//                 z-index: -1;
+//             }
+
+//             &:hover,
+//             &:focus {
+//                 color: $color-white;
+
+//                 &:before {
+//                     width: 0%;
+//                     right: 0;
+//                 }
+//             }
+//         }
+//     }
+// }

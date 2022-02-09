@@ -1,0 +1,5 @@
+root = true
+[*.{js,txt,md,css,html,php,py,json,yml,sass,pug,jsx}]
+indent_style = space
+indent_size = 2
+charset = utf-8

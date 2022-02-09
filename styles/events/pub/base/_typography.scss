@@ -1,0 +1,135 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+// Font Family Names
+$font-regular-name:	        'Rubik';
+$font-serif-name:		    'Alfa Slab One';
+
+$font-family-sans-serif:	$font-regular-name, Helvetica, Arial, sans-serif;
+$font-family-serif:			$font-serif-name, 'Times New Roman', Georgia, serif;
+
+$font-family-primary:		$font-family-sans-serif;
+$font-family-secondary:		$font-family-serif;
+
+// $font-family-primary-url:   '../fonts/text/Rubik';
+// $font-family-secondary-url: '../fonts/text/AlfaSlabOne';
+
+
+// --------------------------------------------
+// Font Size Variants
+// --------------------------------------------
+
+// Base Size
+$theme-fs-base-unit:		16px !default;
+
+// Font Size Variants
+$theme-fs-xxs:			 	11px !default; 
+$theme-fs-xs:			 	ceil(($theme-fs-base-unit * .80)) !default; 
+$theme-fs-sm:			 	ceil(($theme-fs-base-unit * .875)) !default; 
+$theme-fs-nm:				ceil(($theme-fs-base-unit * 1)) !default;
+$theme-fs-nm--l:			ceil(($theme-fs-base-unit * 1.125)) !default;
+$theme-fs-md:			 	ceil(($theme-fs-base-unit * 1.50)) !default; 
+$theme-fs-lg:			 	ceil(($theme-fs-base-unit * 1.70)) !default; 
+$theme-fs-xl:			 	ceil(($theme-fs-base-unit * 2.25)) !default; 
+$theme-fs-xxl:			 	ceil(($theme-fs-base-unit * 3.4)) !default; 
+$theme-fs-xxxl:			 	ceil(($theme-fs-base-unit * 4.25)) !default; 
+$theme-fs-5x:			 	ceil(($theme-fs-base-unit * 5)) !default; 
+$theme-fs-6x:			 	ceil(($theme-fs-base-unit * 6)) !default; 
+
+// Font Weights
+$theme-fw-light:            300;
+$theme-fw-regular:          400;
+$theme-fw-bold:             700;
+
+// Line Height Variants
+$theme-lh-mn:	            1.428571429 !default;
+$theme-lh-lg:               1.8 !default; // extra decimals for Win 8.1 Chrome
+$theme-lh-sm:               1.2 !default;
+$theme-lh-min:              1;
+
+
+// --------------------------------------------
+// Font Family Definition
+// --------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+// @include font-face(
+// 	$font-regular-name,
+// 	$icon-font-url,
+// 	("ttf", "svg", "woff", "eot")
+// );
+
+// body {
+//     font-family: $font-family-primary;
+// }
+
+
+// Section Title - Primary
+.section-title--primary {
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-xxl;
+    color: $color-primary-dark;
+    text-shadow: 2px -3px 4px rgba($color-secondary, 1);
+
+    small {
+        display: block;
+        font-family: $font-family-primary;
+        font-size: $theme-fs-lg;
+        color: $color-primary-bright;
+        text-shadow: 0 0 0;
+    }
+
+    // SM
+    @include breakpoint(sm) {
+        font-size: $theme-fs-xl*1.2;
+        text-shadow: 1px -2px 3px rgba($color-secondary, 1);
+    }
+}
+
+// Section Title - Primary - Light
+.section-title--primary-light {
+    color: $color-white;
+    text-shadow: 3px -4px 0 rgba($color-primary-dark, 1);
+
+    small {
+        color: $color-primary-bright;
+    }
+}
+
+// Section Title - Framed - Light
+.section-title-framed {
+    background: url(/images/events/pub/bg-title-frame.svg) no-repeat center center;
+    font-family: $font-family-primary;
+    font-size: $theme-fs-lg;
+    font-weight: $theme-fw-bold;
+    color: $color-white;
+    line-height: 58px;
+}
+
+.section-desc--light {
+    color: $color-grey-light
+}
+
+.p-bright {
+    color: $color-primary-alt;
+}
+
+.p-lead {
+    font-size: $theme-fs-lg;
+    strong {
+        position: relative;
+        font-weight: $theme-fw-bold;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 6px;
+            width: 100%;
+            background-color: $color-secondary;
+            bottom: 0.12em;
+            z-index: -1;
+        }
+    }
+}

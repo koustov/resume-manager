@@ -1,0 +1,140 @@
+// a{
+//   text-decoration:none;
+//   }
+//   ul{
+//   position:relative;
+//   left:-40px;
+//   width:100%;
+//   }
+//   i{
+//   color:#3399ff;
+//   margin:0 5px;
+//   }
+//   li{
+//   list-style:none;
+//   margin:20px 0;
+//   width:100%;
+//   line-height:1.4em;
+//   }
+//   a,li,button{
+//   transition:0.5s;
+//   }
+//   a{
+//   cursor:pointer;
+//   }
+//   b,strong{
+//   font-weight:700;
+//   }
+//   p,li{
+//   line-height:1.4em;
+//   letter-spacing:0.08em;
+//   }
+//   em{
+//   color:#3399ff;
+//   font-weight:700;
+//   font-size:0.8em;
+//   display:block;
+//   font-style:normal;
+//   }
+//   label{
+//   color:#3399ff;
+//   font-weight:700;
+//   font-size:0.8em;
+//   display:block;
+//   margin:10px 0;
+//   }
+//   img{
+//   width:90%;
+//   height:90%;
+//   margin:auto;
+//   }
+  .title{
+  font-size:2em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:700;
+  }
+  .sub-title{
+  font-size:1em;
+  font-weight:400;
+  color:gray;
+  line-height:1em;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*CONTAINER*/
+  .container{
+  width:100%;
+  position:relative;
+  display: flex;
+  }
+  
+  .container .section_left{
+  width:25%;
+  padding:20px;
+  background: #1b2631 ;
+  color:#fff;
+  }
+  
+  .container .section_left img{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  margin:auto;
+  }
+  
+  .container .progress_container{
+  width:90%;
+  height:10px;
+  border-radius:20px;
+  background:#1e1e1e;
+  }
+  
+  .container .progress_container .progress_bar{
+  background:#3399ff;
+  border-radius:20px;
+  height:10px;
+  }
+  
+  .container .section_right{
+  padding:30px;
+  flex: 1;
+  float:right;
+  position:absolute;
+  top:0;
+  right:0;
+  }
+  
+  .container .section_right table{
+  width:100%;
+  }
+  
+  .container .section_right table td{
+  padding:10px;
+  }
+  
+  .container .section_right table td:nth-child(1){
+  width:20%;
+  font-weight:bold;
+  }
+  
+  
+  
+  
+  
+  // @media (max-width:920px){
+  // .container .section_left{
+  // width:100%;
+  // display:block;
+  // }
+  // .container .section_right{
+  // width:100%;
+  // position:static;
+  // display:block;
+  // }
+  // }

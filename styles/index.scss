@@ -1,0 +1,34 @@
+/*
+ *  Main SCSS File for UI.Focus Website
+ */
+
+// Base
+@import 'main/base/variables';
+@import 'main/base/colors';
+@import 'main/base/mixins';
+
+// Vendors
+@import 'main/vendors/bootstrap';
+
+// Utilities
+@import 'main/utilities/helpers';
+@import 'main/utilities/animation';
+
+// Typography
+@import 'main/base/typography';
+
+// Components
+@import 'main/components/button';
+@import 'main/components/carousel';
+@import 'main/components/resume';
+
+// Layout
+@import 'main/layout/header';
+@import 'main/layout/navigation';
+// @import './layout/sections';
+@import 'main/layout/footer';
+
+// Pages
+@import 'main/pages/home'
+
+

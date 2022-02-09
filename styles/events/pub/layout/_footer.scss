@@ -1,0 +1,107 @@
+
+
+
+// Page Footer
+// ----------------------------------
+.page-footer {
+    position: relative;
+    padding: $spacer-nm*10 0 0 0;
+    overflow: hidden;
+
+
+    @media screen and (max-width: $screen-md-min) {
+        padding: $spacer-nm*4 0 0 0;
+    }
+    
+
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: $color-primary-alt;
+        width: 120%;
+        height: 80vh;
+        left: 0;
+        top: 13vh;
+        border-top-left-radius: 6vw;
+        transform: rotateZ(6deg);
+        z-index: 1;
+
+        @media screen and (max-width: $screen-md-min) {
+            transform: unset;
+            height: 100%;
+            top: 40px;
+            border-top-left-radius: 0;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $color-secondary;
+        width: 90%;
+        height: 200px;
+        right: 5%;
+        top: 90px;
+        border-top-right-radius: 8vw;
+        transform: rotateZ(-4deg);
+
+        @media screen and (max-width: $screen-md-min) {
+            top: 24px;
+        }
+    }
+
+    & &-container {
+        position: relative;
+        padding: $spacer-lg $spacer-xl $spacer-xxl $spacer-xl;
+        // background-color: $color-primary-alt;
+        z-index: 2;
+    }
+
+    .footer-section-title {
+        font-family: $font-family-secondary;
+        font-size: $theme-fs-lg;
+        color: $color-secondary;
+        text-shadow: 2px -4px 0px rgba($color-primary-dark, 1);
+
+        @media screen and (max-width: $screen-md-min) {
+            margin-top: $spacer-lg;
+        }
+    }
+
+    .footer-desc {
+        font-size: $theme-fs-sm;
+        color: lighten($color-primary-alt, 30%);
+
+        &--lg {
+            font-size: $theme-fs-md;
+            font-weight: $theme-fw-light;
+            max-width: 75%;
+        }
+    }
+
+    .footer-brand {
+        margin-bottom: $spacer-lg;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__logo {
+            margin: 0 $spacer-nm 0 0;
+            a {
+                display: block;
+                width: 108px;
+                height: 71px;
+                background: url(/images/events/pub/logo-footer.svg) no-repeat center;
+            }
+        }
+
+        &__tagline {
+            margin-bottom: 0;
+            font-size: $theme-fs-nm;
+            color: $color-tertiary;
+        }
+    }
+
+}

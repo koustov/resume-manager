@@ -1,0 +1,103 @@
+// Buttons
+
+// Default
+.btn-default {
+    $size: 48px;
+
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border: solid 2px $color-secondary;
+    border-radius: $size;
+    padding: $spacer-sm $spacer-lg;
+
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-nm*1.25;
+    font-weight: unset;
+    color: $color-primary;
+    line-height: $size;
+
+    .btn__icon {
+        @include simple-transition(2x);
+        margin-left: $spacer-nm;
+        display: flex;
+        align-items: center;
+
+        svg {
+            vertical-align: unset;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        background-color: $color-primary;
+        color: $color-white;
+
+        .btn__icon {
+            margin-left: $spacer-lg;
+        }
+    }
+}
+
+.btn-circle {
+    $circle-size: 160px;
+
+    .btn__icon {
+        display: block;
+        width: $circle-size;
+        height: $circle-size;
+        margin: 0 auto;
+        border-radius: $circle-size;
+        background-color: $color-secondary;
+
+        .btn__icon-element {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .btn__label {
+        margin-top: $spacer-nm;
+        font-family: $font-family-secondary;
+        font-size: $theme-fs-md*1.04;
+        font-weight: 700;
+        color: $color-primary;
+    }
+
+    .btn__slug {
+        font-size: $theme-fs-sm;
+        color: $color-grey-light;
+    }
+}
+
+.btn-text {
+    padding: $spacer-nm 0;
+
+    .btn__label {
+        font-family: $font-family-secondary;
+        font-size: $theme-fs-nm--l+0.6;
+        font-weight: 700;
+        color: $color-primary;
+    }
+
+    .btn__icon {
+        @include simple-transition(2x);
+        margin-left: $spacer-nm;
+    }
+
+    &:hover,
+    &:focus {
+        .btn__icon {
+            margin-left: $spacer-xl;
+        }
+    }
+
+    // Light
+    &--light {
+        .btn__label {
+            color: $color-white;
+        }
+    }
+}

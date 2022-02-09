@@ -1,0 +1,367 @@
+
+
+
+// Page Header - Episode Details
+// ----------------------------------
+
+.page-header {
+    // Header
+    &--default,
+    &--episode {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: $color-secondary;
+            width: 90%;
+            height: 200px;
+            left: 3%;
+            bottom: 60px;
+            border-bottom-left-radius: 8vw;
+            transform: rotateZ(-8deg);
+            z-index: 0;
+        }
+
+        .page-header-container {
+            position: relative;
+            min-height: calc(100vh - 82px);
+            
+            display: flex;
+            align-items: center;
+
+            .header-bg-graphics-wrapper {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                min-height: calc(100vh - 82px);
+                background-color: $color-primary;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 86%);
+                overflow: hidden;
+            }
+
+            .header-bg-graphics:nth-child(1) {
+                position: absolute;
+                width: 625px;
+                height: 551px;
+                left: 36%;
+                bottom: -30%;
+                mix-blend-mode: soft-light;
+                opacity: 0.4;
+                background: url(/images/events/pub/img-pubbing.svg) no-repeat bottom right;
+
+                @include breakpoint(sm) {
+                    left: -26%;
+                }
+
+                .header-bg-graphics__code {
+                    position: relative;
+                    left: 58%;
+                    width: 135px;
+                    height: 124px;
+                    transform: skewX(-15deg);
+                    mix-blend-mode: soft-light;
+                    background: url(/images/events/pub/img-code-thick.svg) repeat top left;
+                    animation: bannerCodeRun 6s linear infinite forwards;
+                }
+            }
+
+            .header-bg-graphics:nth-child(2) {
+                position: absolute;
+                width: 152px;
+                height: 77px;
+                top: 30%;
+                right: 3%;
+                mix-blend-mode: soft-light;
+                opacity: 0.4;
+                background: url(/images/events/pub/img-code.svg) repeat top left;
+                animation: bannerCodeRun 6s linear infinite forwards;
+
+                @include breakpoint(sm) {
+                    top: 40%;
+                    right: -5%;
+                }
+            }
+
+            .header-bg-graphics:nth-child(3) {
+                position: absolute;
+                top: 20%;
+                left: 60%;
+                mix-blend-mode: soft-light;
+                
+                &:before {
+                    content:"";
+                    position: absolute;
+                    width: 74px;
+                    height: 74px;
+                    background: url(/images/events/pub/img-cog.svg) repeat top left;
+                    animation: rotate-center 14s linear infinite forwards;
+                }
+
+                &:after {
+                    content:"";
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    margin-top: 56px;
+                    margin-left: 56px;
+                    background: url(/images/events/pub/img-cog.svg) repeat top left;
+                    background-size: 54px 54px;
+                    animation: rotate-center 11s linear infinite reverse;
+                }
+
+                @include breakpoint(sm) {
+                    top: 56%;
+                }
+            }
+
+            .header-bg-graphics:nth-child(4) {
+                position: absolute;
+                top: -18%;
+                left: 5%;
+                width: 60vw;
+                height: 60vw;
+                background: url(/images/events/pub/img-rays.svg) repeat top left;
+                background-size: contain;
+                mix-blend-mode: soft-light;
+                animation: rotateClockwise 20s linear infinite;
+
+                @include breakpoint(md) {
+                    width: 70vw;
+                    height: 70vw;
+                    top: -2%;
+                    left: 0%;
+                }
+
+                @include breakpoint(sm) {
+                    left: 20%;
+                }
+            }
+
+            .header-bg-graphics:nth-child(5) {
+                position: absolute;
+                top: 48%;
+                right: -5%;
+                width: 267px;
+                height: 222px;
+                background: url(/images/events/pub/img-puzzle.svg) repeat top left;
+                background-size: contain;
+                mix-blend-mode: luminosity;
+                transform: rotateZ(180deg);
+                opacity: 0.2;
+            }
+
+            .header-bg-graphics:nth-child(6) {
+                position: absolute;
+                top: 28%;
+                left: -3%;
+                width: 160px;
+                height: 119px;
+                transform: rotateY(-180deg);
+                background: url(/images/events/pub/img-console.svg) repeat top left;
+                background-size: contain;
+                mix-blend-mode: soft-light;
+            }
+        }
+    }
+
+
+
+    // Header - Title
+    &-title {
+        @include simple-transition(2x);
+        display: block;
+        width: 108px;
+        height: 71px;
+        margin: $spacer-sm $spacer-nm 0 0;
+        background: transparent url(/images/events/pub/logo-header.svg) no-repeat center;
+        background-size: contain;
+
+        @include breakpoint(md) {
+            display: none;
+        }
+
+        &__tagline {
+            margin: 12px $spacer-sm;
+            font-family: $font-family-primary;
+            font-size: $theme-fs-nm;
+            font-weight: $theme-fw-light;
+            color: $color-tertiary;
+
+            @include breakpoint(md) {
+                z-index: 1;
+            }
+        }
+
+        .sps--blw & {
+            width: 80px;
+            height: 50px;
+
+            @include breakpoint(md) {
+                display: block;
+                z-index: 1;
+            }
+        }
+    }
+
+    // Content
+    &__content {
+        position: relative;
+        z-index: 2;
+        width: calc(100% - #{$spacer-nm*4});
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        align-items: center;
+
+        @include breakpoint(sm) {
+            grid-template-columns: 1fr;
+        }
+
+        .content-title {
+            width: auto;
+            height: 58vh;
+            background: url(/images/events/pub/logo-banner.svg) no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            @include breakpoint(sm) {
+                height: 42vh;
+                margin-bottom: 0;
+            }
+        }
+
+        .content-title--secondary {
+            font-family: $font-family-secondary;
+            font-size: $theme-fs-xxxl;
+            color: $color-white;
+            text-shadow: 2px -3px 4px rgba($color-black, 1);
+        }
+
+        // Nested Titles
+        .content-title--secondary-nested {
+            display: flex; 
+            flex-direction: column;
+
+            .title-level-1 {
+                display: flex;
+                flex-direction: row;
+                font-size: $theme-fs-xxxl;
+                color: $color-white;
+                text-shadow: 2px -3px 4px rgba($color-black, 1);
+            }
+
+            .title-level-2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-right: $spacer-nm;
+            }
+
+            .title-level-3 {
+                font-size: $theme-fs-md;
+                color: $color-secondary;
+            }
+        }
+
+        .content-desc {
+            font-family: $font-family-secondary;
+            text-align: center;
+
+            &__label {
+                margin-bottom: $spacer-nm;
+                font-size: $theme-fs-lg;
+                color: $color-white;
+                text-shadow: 4px -4px 0px rgba($color-black-full, 0.6);
+            }
+
+            &__value {
+                $size: 6vw;
+                display: block;
+                width: $size*2;
+                height: $size*2;
+                border-radius: $size*1.4;
+                margin: 0 auto;
+                background-color: $color-tertiary;
+                color: $color-white;
+                font-size: $size;
+                line-height: $size*2;
+                text-shadow: 4px -6px 0px rgba($color-primary-dark, 1);
+
+                @include breakpoint(sm) {
+                    $size: 8vw;
+                    width: $size*2;
+                    height: $size*2;
+                    border-radius: $size*1.4;
+                    margin-bottom: 0;
+                    font-size: $size;
+                    line-height: $size*2;
+                    font-size: $size;
+                }
+            }
+        }
+    }
+}
+
+
+// 404 Page
+.page-header--404 {
+    .page-header__content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        .content-title {
+            width: 100%;
+            height: 32vh;
+        }
+
+        .content-desc--lead {
+            margin-top: $spacer-nm;
+            font-family: $font-family-secondary;
+            font-size: $theme-fs-xxl;
+            color: $color-tertiary;
+            text-shadow: 3px -4px 0 $color-black;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .content-desc {
+            font-family: $font-family-primary;
+            color: $color-white;
+        }
+
+        .content-anchor {
+            position: relative;
+            display: inline-block;
+            margin-bottom: $spacer-md;
+            padding: $spacer-nm 0 0 0;
+            font-family: $font-family-secondary;
+            text-decoration: none;
+            color: $color-white;
+
+            &:before {
+                @include simple-transition(2x);
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 3px;
+                bottom: 0px;
+                background-color: $color-primary-bright;
+                z-index: -1;
+            }
+
+            &:hover,
+            &:focus {
+                color: $color-white;
+
+                &:before {
+                    width: 0%;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

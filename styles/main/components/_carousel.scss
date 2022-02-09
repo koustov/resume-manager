@@ -1,0 +1,182 @@
+// Carousel
+.carousel-main-banner {
+    .carousel-item {
+        height: 100vh;
+        overflow: hidden;
+
+        @include breakpoint(md) {
+            height: auto;
+        }
+    }
+    .banner__image-wrapper {
+        position: relative;
+    }
+    .banner__image-wrapper:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $color-primary;
+        mix-blend-mode: soft-light;
+    }
+    .banner__image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        mix-blend-mode: lighten;
+
+        img {
+            height: 100%;
+        }
+    }
+    .banner__abstract {
+        position: absolute;
+        top: 0;
+        right: -15%;
+        opacity: 0.4;
+    }
+
+    .carousel-caption {
+        top: calc(50% - 40px);
+        right: unset;
+        left: unset;
+        font-family: $font-family-secondary;
+        text-align: left;
+        text-shadow: 3px 3px 3px rgba($color-black-full, 0.4);
+        transform: translateY(-50%);
+        z-index: auto;
+
+        small {
+            display: block;
+            margin-left: $spacer-sm;
+            margin-bottom: $spacer-sm;
+            font-size: $theme-fs-nm--l;
+
+            @include breakpoint(md) {
+                margin-left: 0;
+            }
+        }
+
+        h3 {
+            font-family: $font-family-secondary;
+            font-size: 18vh;
+            line-height: 0.9;
+
+            @include breakpoint(md) {
+                font-size: 10vw;
+            }
+
+            div {
+                display: flex;
+                align-items: baseline;
+                color: $color-secondary;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 24px;
+                    background-color: $color-white;
+
+                    @include breakpoint(md) {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 12px;
+                    }
+                }
+            }
+        }
+
+        p {
+            margin: 0 0 0 $spacer-sm;
+            font-size: $theme-fs-xl;
+
+            strong {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 4px;
+                    left: 0;
+                    height: 4px;
+                    background-color: $color-secondary;
+                }
+            }
+        }
+    }
+
+    .carousel-indicators {
+        z-index: auto;
+    }
+}
+
+// Carousel - Testimonials
+.carousel-testimonials-quote {
+    width: 64px;
+    height: 64px;
+
+    @include breakpoint(md) {
+        width: 48px;
+        height: 48px;
+    }
+
+    @include breakpoint(sm) {
+        width: 32px;
+        height: 32px;
+    }
+}
+.carousel-testimonials {   
+    .carousel-item {
+        .carousel-caption {
+            position: relative;
+            right: unset;
+            bottom: unset;
+            left: unset;
+            text-align: left;
+            z-index: auto;
+
+            p {
+                font-family: $font-family-secondary;
+                font-size: $theme-fs-lg;
+                color: $color-white;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    // Controls
+    .carousel-control-prev svg {
+        transform: rotateZ(-180deg);
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 0;
+        opacity: 1;
+
+        svg {
+            width: 24px;
+            height: auto;
+
+            #shape {
+                fill: $color-primary-bright;
+            }
+        }
+
+        &:hover svg #shape {
+            fill: $color-black;
+        }
+    }
+
+    .carousel-control-next {
+        margin-left: $spacer-lg;
+    }
+
+}

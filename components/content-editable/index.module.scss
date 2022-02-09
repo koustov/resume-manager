@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  &:hover {
+    .buttonContiner{
+      display:block;
+    }    
+  }
+}
+
+.buttonContiner{
+  position: absolute;
+  right:0;
+  top:0;
+  display: none;
+}

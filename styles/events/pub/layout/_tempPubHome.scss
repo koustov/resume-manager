@@ -1,0 +1,179 @@
+/*
+* Note: This file has to be removed when PUB landing page is designed as per the standard requirement.
+*/
+
+.page-header {
+    // Temporary Landing
+    &--temp {
+        &:before {
+            display: none;
+        }
+        .page-header-container {
+            height: 100vh;
+
+            .header-bg-graphics-wrapper {
+                clip-path: none;
+
+                .header-bg-graphics:nth-child(4) {
+                    top: -30%;
+                    left: 20%;
+                }
+            }
+        }
+    }
+
+    // Content
+    &__content--temp {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "logo logo logo logo"
+            "secTitle secTitle secTitle secTitle"
+            "episode episode episode episode"
+        ;
+
+        .content-title {
+            grid-area: logo;
+            height: 36vh;
+        }
+
+        .content-title--secondary {
+            position: relative;
+            grid-area: secTitle;
+            text-align: center;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 2px;
+                top: calc(50% - 12px);
+                bottom: 0;
+                right: 15%;
+                left: 15%;
+                background-color: $color-secondary;
+            }
+
+            &__text {
+                display: inline-block;
+                width: auto;
+                margin: $spacer-nm auto $spacer-xl auto;
+                padding: $spacer-nm $spacer-nm*3;
+                background-color: $color-secondary;
+                font-family: $font-family-primary;
+                font-weight: $theme-fw-bold;
+                font-size: $theme-fs-md;
+                text-align: center;
+                clip-path: polygon(0% 15%, 100% 0%, 90% 100%, 10% 90%);
+            }
+        }
+
+        .content-desc {
+            grid-area: episode;
+        }
+
+        .content-desc__value {
+
+            &:hover,
+            &:focus {
+                background-color: rgba(#000000, 0.6);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+// Section Old Episodes
+.section-episodes-old {
+    padding: $spacer-xl*2 0;
+    text-align: center;
+
+    .section-title {
+        margin-top: 0;
+        font-family: $font-family-primary;
+        font-size: $theme-fs-xxl;
+        font-weight: $theme-fw-bold;
+        color: $color-primary;
+
+        strong {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 2px;
+                left: 0;
+                height: 8px;
+                background-color: $color-secondary;
+            }
+        }
+
+        
+    }
+
+    .section-text-lead {
+        font-size: $theme-fs-lg;
+        color: $color-primary-bright;
+    }
+}
+
+
+.list-episodes-old {
+    $size: 6vw;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($size*2, 1fr));
+    grid-auto-rows: minmax($size*3, min-content);
+
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    // grid-auto-rows: minmax(150px, min-content);
+
+    .list-item {
+        font-family: $font-family-secondary;
+        text-align: center;
+
+        &__label {
+            margin-bottom: $spacer-nm;
+            font-family: $font-family-primary;
+            font-size: $theme-fs-lg;
+            font-weight: $theme-fw-bold;
+            color: $color-primary-alt;
+            text-align: center;
+        }
+
+        &__value {
+            @include simple-transition;
+            display: block;
+            width: $size*2;
+            height: $size*2;
+            border-radius: $size*1.4;
+            margin: 0 auto;
+            background-color: $color-secondary;
+            color: $color-primary-bright;
+            font-size: $size;
+            line-height: $size*2;
+            text-shadow: 4px -6px 0px rgba($color-primary-dark, 1);
+
+            @include breakpoint(sm) {
+                $size: 8vw;
+                width: $size*2;
+                height: $size*2;
+                border-radius: $size*1.4;
+                margin-bottom: 0;
+                font-size: $size;
+                line-height: $size*2;
+                font-size: $size;
+            }
+
+            &:hover {
+                background-color: $color-primary-bright;
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+    }
+}

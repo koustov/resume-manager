@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="376.3">
+  <defs/>
+  <g data-name="Group 2123">
+    <path fill="#a1c7ff" d="M0 311h600v4H0z" data-name="Rectangle 12"/>
+  </g>
+  <g data-name="Group 2122">
+    <path fill="#45f7f6" d="M30 310a72 72 0 0123-117c10-4 20-5 29-10 32-15 44-53 62-83 26-44 73-77 124-82s105 20 131 64c14 24 21 52 38 74a92 92 0 0048 31c16 5 34 4 50 8 26 6 50 22 60 47s3 56-19 70z" data-name="Path 104" opacity=".2"/>
+    <path fill="#a2fcfb" d="M78 310a55 55 0 0118-89l22-7c24-11 33-40 47-64 20-33 55-58 94-61s80 14 100 48c11 18 16 39 29 56a70 70 0 0036 24c12 3 26 3 38 6 20 4 38 17 46 35s2 43-15 53z" data-name="Path 105"/>
+  </g>
+  <g data-name="Group 2126">
+    <path d="M326 367l5 9h-28a7 7 0 017-5l4 1a3 3 0 003-5h9z" data-name="Path 1190"/>
+    <path d="M303 367l4 9h-28a7 7 0 018-5l3 1a3 3 0 003-5h10z" data-name="Path 1191"/>
+    <g data-name="Group 2106">
+      <g data-name="Group 2105">
+        <path fill="#5c65ff" d="M306 368l24-64 29-14 32 17 9-13-35 4-47-11a12 12 0 00-8 9l-21 72z" data-name="Path 1192"/>
+        <path fill="#5c65ff" d="M335 288a12 12 0 00-6 10l-16 70h15l23-60s29 7 48 7c9 0 19-8 19-18v-3z" data-name="Path 1193"/>
+        <path fill="#fdbc00" d="M351 286l-9-13 20-42a18 18 0 0116-10h25a21 21 0 0119 11l22 33a9 9 0 01-4 14l-22 10v9l-49-6 2-45zm72-15a3 3 0 002-5l-7-10v17z" data-name="Path 1194"/>
+        <path fill="#ffbe9d" d="M367 185c0-7 6-15 15-17a20 20 0 0122 9l1 1a20 20 0 012 16l-6 18v9l-8 5-8-5-1-10h-7a10 10 0 01-10-10v-7z" data-name="Path 1195"/>
+        <path fill="#fff" d="M375 200a4 4 0 009 0" data-name="Path 1196"/>
+        <g fill="#ffbe9d" data-name="Group 2104">
+          <g data-name="Group 2103">
+            <path d="M388 289a2 2 0 010-3l9-5 5 3-12 5a2 2 0 01-2 0z" data-name="Path 1197"/>
+            <path d="M388 293a2 2 0 011-3l12-6 2 3-12 7a2 2 0 01-3-1z" data-name="Path 1198"/>
+            <path d="M391 296a2 2 0 011-3l11-6 2 4-11 6a2 2 0 01-3-1z" data-name="Path 1199"/>
+            <path d="M399 297a2 2 0 010-3l6-3 2 4-6 3a2 2 0 01-2-1z" data-name="Path 1200"/>
+          </g>
+          <path d="M405 296l3-1a5 5 0 001-2l2-2-5-10a13 13 0 00-10 1z" data-name="Path 1201"/>
+        </g>
+        <path fill="#2c1e56" d="M394 162c-11-3-23 2-27 14a15 15 0 00-1 4l9 1 3-6 1 6 15 1 10 23 6-13a23 23 0 00-16-30z" data-name="Path 1202"/>
+        <path fill="#ffbe9d" d="M394 194a4 4 0 104-4 4 4 0 00-4 4z" data-name="Path 1203"/>
+        <path fill="#2c1e56" d="M393 174v27a22 22 0 004-16l-4-11z" data-name="Path 1205"/>
+      </g>
+    </g>
+    <g data-name="Group 2107">
+      <path fill="#fff" d="M310 293h58a6 6 0 00-5-6h-53z" data-name="Path 1206"/>
+      <path fill="#fff" d="M298 293h52a5 5 0 004-6l-7-33a5 5 0 00-4-4h-52a5 5 0 00-5 6l7 33a5 5 0 005 4z" data-name="Path 1207"/>
+      <path fill="#ffd01f" d="M316 271a4 4 0 104-4 4 4 0 00-4 4z" data-name="Path 1208"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#766ee7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-name="Group 2133">
+    <path d="M486 78l-21 11-13-2 21-11z" data-name="Path 51"/>
+    <path d="M474 56l-20 11-14-1 21-12z" data-name="Path 52"/>
+    <path d="M474 56l12 22" data-name="Line 27"/>
+    <path d="M453 67l12 22" data-name="Line 28"/>
+    <path d="M440 66l12 21" data-name="Line 29"/>
+    <path d="M461 54l12 22" data-name="Line 30"/>
+  </g>
+  <g fill="none" stroke="#766ee7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" data-name="Group 2134">
+    <path d="M193 74l-18 2-22-15 15-4z" data-name="Path 55"/>
+    <path d="M175 76l14-34 4 32" data-name="Path 56"/>
+    <path d="M153 61l36-19-21 15" data-name="Path 57"/>
+  </g>
+  <g data-name="Group 2135">
+    <path fill="#1a26cc" d="M431 153h69a4 4 0 014 4v35a4 4 0 01-4 4h-69a4 4 0 01-4-4v-35a4 4 0 014-4z" data-name="Rectangle 69" opacity=".2"/>
+    <path fill="#f3f1ff" d="M429 152h69a4 4 0 014 3v36a4 4 0 01-4 3h-69a4 4 0 01-4-3v-36a4 4 0 014-3z" data-name="Path 1273"/>
+    <path fill="#1a26cc" fill-rule="evenodd" d="M429 152h69a4 4 0 014 3v5a1 1 0 01-1 1h-75a1 1 0 01-1-1v-5a4 4 0 014-3z" data-name="Path 169"/>
+    <path fill="#fff" fill-rule="evenodd" d="M483 158a2 2 0 10-1-2 2 2 0 001 2z" data-name="Path 184"/>
+    <path fill="#fff" fill-rule="evenodd" d="M490 158a2 2 0 10-2-2 2 2 0 002 2z" data-name="Path 185"/>
+    <path fill="#fff" fill-rule="evenodd" d="M496 158a2 2 0 10-2-2 2 2 0 002 2z" data-name="Path 186"/>
+    <text fill="#3441af" font-family="Rubik-Bold, Rubik" font-size="14" font-weight="700" opacity=".5" transform="translate(463 182)">
+      <tspan x="-14.9" y="0">UXD</tspan>
+    </text>
+  </g>
+  <g data-name="Group 2149">
+    <path fill="#1a26cc" d="M167 116h39a4 4 0 014 4v28a4 4 0 01-4 4h-39a4 4 0 01-3-4v-28a4 4 0 013-4z" data-name="Rectangle 69" opacity=".2"/>
+    <path fill="#f3f1ff" d="M166 115h38a4 4 0 014 3v28a4 4 0 01-4 4h-38a4 4 0 01-4-4v-28a4 4 0 014-3z" data-name="Rectangle 70"/>
+    <path fill="#1a26cc" fill-rule="evenodd" d="M164 115h42c1 0 2 1 2 3v5l-1 1h-44l-1-1v-5c0-2 1-3 2-3z" data-name="Path 169"/>
+    <path fill="#fff" fill-rule="evenodd" d="M189 121a2 2 0 10-1-2 2 2 0 001 2z" data-name="Path 184"/>
+    <path fill="#fff" fill-rule="evenodd" d="M196 121a2 2 0 10-2-2 2 2 0 002 2z" data-name="Path 185"/>
+    <path fill="#fff" fill-rule="evenodd" d="M202 121a2 2 0 10-2-2 2 2 0 002 2z" data-name="Path 186"/>
+    <text fill="#3441af" font-family="Rubik-Bold, Rubik" font-size="14" font-weight="700" opacity=".5" transform="translate(185 141)">
+      <tspan x="-11.9" y="0">css</tspan>
+    </text>
+  </g>
+  <g data-name="Group 2139" transform="translate(440 252)">
+    <path fill="#fff" d="M38 49c-4 7-10 12-17 12C9 61 0 49 0 34v-2h41v2c4 1 7 4 7 7 0 5-5 8-10 8zm5-8a7 7 0 00-2-5 33 33 0 01-3 12c3-2 5-4 5-7z" data-name="Path 106"/>
+    <path fill="#ddd6fe" d="M48 41c0 5-5 8-10 8-4 7-10 12-17 12a18 18 0 01-13-6 31 31 0 008 0c5-1 10-3 14-6 6-4 9-10 11-17v2c4 1 7 4 7 7zm-5 0a7 7 0 00-2-5 33 33 0 01-3 12c3-2 5-4 5-7z" data-name="Path 107" opacity=".3"/>
+    <ellipse cx="20.7" cy="2.5" fill="#ddd6fe" data-name="Ellipse 4" rx="20.7" ry="2.5" transform="translate(0 30)"/>
+    <path fill="#6455bc" d="M38 32c0 1-8 2-17 2S3 33 3 32s8-2 18-2 17 1 17 2z" data-name="Path 108"/>
+    <path fill="#00e4c2" d="M19 33a4 4 0 01-3-2 6 6 0 01-1-2 7 7 0 01-1-3 10 10 0 011-3 30 30 0 013-5 31 31 0 002-4 14 14 0 001-5 10 10 0 00-1-4 7 7 0 00-1-2 5 5 0 00-2-2 3 3 0 00-2 0 2 2 0 00-1 2 2 2 0 010-1 3 3 0 010-1 3 3 0 012-1 4 4 0 011 0 7 7 0 015 3 11 11 0 012 6 15 15 0 01-1 6 26 26 0 01-3 5 43 43 0 00-3 4 10 10 0 00-1 2 6 6 0 000 3 5 5 0 003 4z" data-name="Path 109"/>
+    <path fill="#00e4c2" d="M24 29a4 4 0 01-1-2 6 6 0 010-3 14 14 0 013-4l1-2 1-2a36 36 0 002-5 10 10 0 010 6 12 12 0 01-1 2 14 14 0 01-1 2 36 36 0 00-3 4 7 7 0 00-1 2 4 4 0 000 2z" data-name="Path 110"/>
+    <path fill="#6455bc" d="M5 39a1 1 0 110-1 1 1 0 010 1z" data-name="Path 111"/>
+    <path fill="#6455bc" d="M15 41a1 1 0 11-1-1 1 1 0 011 1z" data-name="Path 112"/>
+    <circle cx=".8" cy=".8" r=".8" fill="#6455bc" data-name="Ellipse 5" transform="translate(25 41)"/>
+    <path fill="#6455bc" d="M37 39a1 1 0 11-1 0 1 1 0 011 0z" data-name="Path 113"/>
+    <path fill="#6455bc" d="M10 46a1 1 0 11-1 0 1 1 0 011 0z" data-name="Path 114"/>
+    <path fill="#6455bc" d="M21 49a1 1 0 11-1-1 1 1 0 011 1z" data-name="Path 115"/>
+    <path fill="#6455bc" d="M33 47a1 1 0 11-1-1 1 1 0 011 1z" data-name="Path 116"/>
+    <path fill="#6455bc" d="M15 55a1 1 0 11-1-1 1 1 0 011 1z" data-name="Path 117"/>
+    <circle cx=".8" cy=".8" r=".8" fill="#6455bc" data-name="Ellipse 6" transform="translate(25 53)"/>
+  </g>
+  <g data-name="Group 2142">
+    <g data-name="Group 37">
+      <path fill="#2f40dd" d="M558 304a6 6 0 01-6 6h-43v-12h43a6 6 0 016 6z" data-name="Rectangle 13"/>
+      <path fill="#2f40dd" d="M554 298h-1a3 3 0 013 3v6a3 3 0 01-3 3h1a3 3 0 003-3v-6a3 3 0 00-3-3z" data-name="Path 59" opacity=".6" style="mix-blend-mode:multiply;isolation:isolate"/>
+      <path fill="#2f40dd" d="M547 298h-1a3 3 0 013 3v6a3 3 0 01-3 3h1a3 3 0 003-3v-6a3 3 0 00-3-3z" data-name="Path 60" opacity=".6" style="mix-blend-mode:multiply;isolation:isolate"/>
+      <path fill="#4a63fe" d="M547 304a6 6 0 01-6 6h-42v-12h42a6 6 0 016 6z" data-name="Rectangle 14"/>
+      <path fill="#e9f1ff" d="M499 299h43a4 4 0 013 4v2a4 4 0 01-3 3h-43v-9z" data-name="Rectangle 15"/>
+    </g>
+    <path fill="none" stroke="#bbd8f9" stroke-miterlimit="10" d="M545 301h-43" data-name="Line 31"/>
+    <path fill="none" stroke="#bbd8f9" stroke-miterlimit="10" d="M545 304h-16" data-name="Line 32"/>
+    <path fill="none" stroke="#bbd8f9" stroke-miterlimit="10" d="M545 306h-41" data-name="Line 33"/>
+    <path fill="none" stroke="#bbd8f9" stroke-miterlimit="10" d="M526 304h-16" data-name="Line 34"/>
+  </g>
+  <g data-name="Group 2143">
+    <g data-name="Group 39">
+      <path fill="#ffac06" d="M552 291a6 6 0 01-6 7h-43v-13h43a6 6 0 016 6z" data-name="Rectangle 16"/>
+      <path fill="#ffcd2e" d="M548 285h-1a3 3 0 013 3v6a3 3 0 01-3 4h1a3 3 0 003-4v-6a3 3 0 00-3-3z" data-name="Path 61"/>
+      <path fill="#ffcd2e" d="M542 285h-2a3 3 0 014 3v6a3 3 0 01-4 4h2a3 3 0 003-4v-6a3 3 0 00-3-3z" data-name="Path 62"/>
+      <path fill="#ffcc5a" d="M541 291a6 6 0 01-6 7h-42v-13h42a6 6 0 016 6z" data-name="Rectangle 17"/>
+      <path fill="#ffead7" d="M493 287h43a4 4 0 014 3v2a4 4 0 01-4 4h-43v-9z" data-name="Rectangle 18"/>
+    </g>
+    <path fill="none" stroke="#ffd19f" stroke-miterlimit="10" d="M540 289h-44" data-name="Line 35"/>
+    <path fill="none" stroke="#ffd19f" stroke-miterlimit="10" d="M540 291h-17" data-name="Line 36"/>
+    <path fill="none" stroke="#ffd19f" stroke-miterlimit="10" d="M540 293h-41" data-name="Line 37"/>
+    <path fill="none" stroke="#ffd19f" stroke-miterlimit="10" d="M521 291h-17" data-name="Line 38"/>
+  </g>
+  <path fill="none" stroke="#fdbc00" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M534 151a3 3 0 103-3 3 3 0 00-3 3z" data-name="Path 1271"/>
+  <path fill="none" stroke="#fdbc00" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M268 37a3 3 0 104-3 3 3 0 00-4 3z" data-name="Path 1272"/>
+  <g fill="none" stroke="#a1c7ff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" data-name="Group 2146">
+    <path d="M457 238v9" data-name="Line 17"/>
+    <path d="M453 243h9" data-name="Line 18"/>
+  </g>
+  <g fill="none" stroke="#a1c7ff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" data-name="Group 2147">
+    <path d="M206 1v9" data-name="Line 19"/>
+    <path d="M201 6h9" data-name="Line 20"/>
+  </g>
+  <g fill="none" stroke="#a1c7ff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" data-name="Group 2148">
+    <path d="M413 71v9" data-name="Line 21"/>
+    <path d="M409 76h9" data-name="Line 22"/>
+  </g>
+  <g fill="#766ee7">
+    <path d="M277 131a2 2 0 012 2l-5 7a2 2 0 11-2-2z" data-name="Path 336"/>
+    <path d="M314 87a7 7 0 01-12-10 7 7 0 0112 10zm-9-8a4 4 0 103-1 4 4 0 00-3 1z" data-name="Path 337"/>
+    <path d="M274 126a2 2 0 010 3l-8 9a2 2 0 11-2-2l7-9a2 2 0 013-1z" data-name="Path 338"/>
+    <path d="M320 65a2 2 0 011 1 29 29 0 012 18 35 35 0 01-7 14l-4 5v18a2 2 0 01-1 1l-10 13a2 2 0 01-2-1l-2-11-3 3a2 2 0 01-2 0l-2-1-7 6a2 2 0 01-2 0l-14-11a2 2 0 010-2l4-8-2-2a2 2 0 010-2l2-3-11 1a2 2 0 01-1-3l10-12a2 2 0 010-1l18-5 4-5a35 35 0 0111-10 29 29 0 0118-3zm-50 53l12 9 6-4-6-5-1 1a2 2 0 01-2-2v-1l-6-4zm23-38l-4 5-5 7a2 2 0 01-2-2l1-3-12 4-8 9h11l4-5a2 2 0 112 2l-4 5-4 5 2 1 7 6 17-21a2 2 0 012 1l-16 22 7 5v1l2 1 3-5 5-5a2 2 0 012 2l-4 4 2 11 7-10 1-13-2 3-2-2 4-6v-1l5-5c4-5 9-16 5-28-12-1-22 7-26 12z" data-name="Path 339"/>
+    <path d="M268 124l-5 7a2 2 0 11-3-2l6-7a2 2 0 012 2z" data-name="Path 340"/>
+  </g>
+  <g data-name="Group 133">
+    <path fill="#d0eeed" d="M221 312l1-151h4l-1 9h34v-9h4l-2 152c0 1-4 2-30 2s-30-1-30-2l20-1zm3-13h34v-18h-33zm1-21h33v-18h-33zm0-22h33v-18h-33zm0-22h33v-17h-33zm0-21h33l1-18h-34zm0-39v17h34v-17zm33 138v-9h-34v9h34z" data-name="Path 327" style="mix-blend-mode:multiply;isolation:isolate"/>
+    <g data-name="Group 132">
+      <path fill="#fdbc00" d="M226 161l-1 9h33l1-9h4l-17 152h-4l1-10h-33l-1 10h-4l17-152zm-2 13l-2 17h33l2-17zm24 82l2-18h-33l-2 18zm-33 4l-2 18h33l2-18zm36-26l2-17h-34l-2 17zm2-21l2-18h-33l-2 18zm-10 86l2-18h-33l-2 18z" data-name="Path 335"/>
+    </g>
+  </g>
+</svg>

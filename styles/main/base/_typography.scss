@@ -1,0 +1,190 @@
+// =============================================================================
+// Typography
+// =============================================================================
+
+// Font Family Names
+$font-regular-name:	        'Heebo';
+$font-serif-name:		    'Gilroy';
+
+$font-family-sans-serif:	$font-regular-name, Helvetica, Arial, sans-serif;
+$font-family-serif:			$font-serif-name, 'Times New Roman', Georgia, serif;
+
+$font-family-primary:		$font-family-sans-serif;
+$font-family-secondary:		$font-family-serif;
+
+// $font-family-primary-url:   '../fonts/text/Rubik';
+$font-serif-url: '../../../fonts/text/gilroy-extrabold-webfont';
+
+
+// --------------------------------------------
+// Font Size Variants
+// --------------------------------------------
+
+// Base Size
+$theme-fs-base-unit:		16px !default;
+
+// Font Size Variants
+$theme-fs-xxs:			 	11px !default; 
+$theme-fs-xs:			 	ceil(($theme-fs-base-unit * .80)) !default; 
+$theme-fs-sm:			 	ceil(($theme-fs-base-unit * .875)) !default; 
+$theme-fs-nm:				ceil(($theme-fs-base-unit * 1)) !default;
+$theme-fs-nm--l:			ceil(($theme-fs-base-unit * 1.125)) !default;
+$theme-fs-md:			 	ceil(($theme-fs-base-unit * 1.50)) !default; 
+$theme-fs-lg:			 	ceil(($theme-fs-base-unit * 1.70)) !default; 
+$theme-fs-xl:			 	ceil(($theme-fs-base-unit * 2.25)) !default; 
+$theme-fs-xxl:			 	ceil(($theme-fs-base-unit * 3.4)) !default; 
+$theme-fs-xxxl:			 	ceil(($theme-fs-base-unit * 4.25)) !default; 
+$theme-fs-5x:			 	ceil(($theme-fs-base-unit * 5)) !default; 
+$theme-fs-6x:			 	ceil(($theme-fs-base-unit * 6)) !default; 
+
+// Font Weights
+$theme-fw-light:            300;
+$theme-fw-regular:          400;
+$theme-fw-bold:             700;
+
+// Line Height Variants
+$theme-lh-mn:	            1.428571429 !default;
+$theme-lh-lg:               1.8 !default; // extra decimals for Win 8.1 Chrome
+$theme-lh-sm:               1.2 !default;
+$theme-lh-min:              1;
+
+
+// --------------------------------------------
+// Font Family Definition
+// --------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+
+@include font-face($font-serif-name, $font-serif-url, 800, normal, ttf woff2 woff);
+
+
+body {
+    font-family: $font-family-primary;
+}
+
+.section-title-primary {
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-5x;
+    color: $color-white;
+    line-height: 1;
+    letter-spacing: -0.03em;
+
+    @include breakpoint(md) {
+        font-size: $theme-fs-xxxl;
+        letter-spacing: -0.02em;
+    }
+
+    @include breakpoint(sm) {
+        font-size: $theme-fs-xxl;
+        letter-spacing: 0;
+    }
+
+    small {
+        display: block;
+        margin-bottom: $spacer-sm;
+        font-size: $theme-fs-nm--l;
+        color: $color-secondary;
+        letter-spacing: 0;
+    }
+
+    strong {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 1px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 12px;
+            z-index: -1;
+            width: 100%;
+            height: 16px;
+            background-color: $color-secondary;
+
+            @include breakpoint(md) {
+                height: 8px;
+            }
+
+            @include breakpoint(sm) {
+                height: 6px;
+            }
+        }
+    }
+
+    &--dark {
+        color: $color-primary;
+    }
+
+    &--dark-full {
+        color: $color-black;
+
+        strong:before {
+            background-color: $color-primary-bright;
+        }
+    }
+}
+
+.section-title-secondary {
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-lg;
+    color: $color-white;
+
+    &--dark {
+        color: $color-primary;
+    }
+}
+
+.section-title--tertiary {
+    position: relative;
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-md*1.04;
+    color: $color-primary;
+    font-weight: normal;
+
+    strong {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 1px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            width: 100%;
+            height: 6px;
+            background-color: $color-secondary;
+        }
+    }
+}
+
+.section-header-slug {
+    font-size: $theme-fs-xxs;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    &--light {
+        color: $color-secondary;
+    }
+
+    &--dark {
+        color: $color-primary-dark;
+    }
+}
+
+.p-xl {
+    font-family: $font-family-secondary;
+    font-size: $theme-fs-nm*4;
+    color: $color-primary-dark;
+    line-height: 1;
+
+    @include breakpoint(md) {
+        font-size: $theme-fs-nm*3;
+    }
+
+    @include breakpoint(sm) {
+        font-size: $theme-fs-nm*2;
+    }
+}

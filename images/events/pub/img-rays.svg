@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="548.681" height="548.681" viewBox="0 0 548.681 548.681">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.402" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.702"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path id="img-rays" d="M326.891,80.945H380.48l-20.389,274.34h-5.827ZM193.31,131.1,239.72,104.3l119.513,247.78L354.186,355ZM467.651,104.3l46.41,26.794L359.233,358.488l-5.047-2.914ZM102.7,241.32,129.5,194.91,356.888,349.738l-2.914,5.047Zm475.17-46.41,26.8,46.41L356.888,360.833l-2.914-5.047ZM79.345,382.08V328.491l274.34,20.389v5.827Zm548.681-53.589V382.08l-274.34-20.389v-5.827ZM129.5,515.661l-1.589-2.752L102.7,469.251l247.78-119.513,2.914,5.047Zm475.172-46.41-26.8,46.41L350.483,360.833l2.914-5.047ZM239.72,606.268l-46.41-26.794L348.138,352.083,353.185,355Zm274.34-26.794-46.41,26.794L348.138,358.488l5.047-2.914ZM380.48,629.626H326.891l20.389-274.34h5.827Z" transform="translate(-79.345 -80.945)" fill="url(#radial-gradient)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+</svg>

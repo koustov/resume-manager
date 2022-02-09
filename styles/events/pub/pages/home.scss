@@ -1,0 +1,141 @@
+// Home Page Styles
+//
+// 
+.page-header-default {
+
+}
+
+
+.section-home-about {
+    padding: $spacer-lg 0;
+    text-align: center;
+
+    .section-text-lead {
+        font-size: $theme-fs-xl;
+        font-weight: $theme-fw-bold;
+        color: $color-primary;
+
+        small {
+            display: block;
+            font-size: $theme-fs-lg;
+            font-weight: $theme-fw-regular;
+            color: $color-primary-bright;
+        }
+
+        strong {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: 4px;
+                left: 0;
+                height: 4px;
+                background-color: $color-secondary;
+
+            }
+        }
+    }
+
+    .home-trophy-graphics {
+        position: relative;
+        padding-top: $spacer-lg;
+
+        &:before {
+            position: absolute;
+            content: "";
+            width: 360px;
+            height: 136px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(/images/events/pub/img-color-papers.svg) repeat center top;
+            animation: showerFlow 10s linear infinite forwards;
+            z-index: 9;
+        }
+    }
+}
+
+.section-about-featured {
+    position: relative;
+    min-height: 400px;
+    text-align: left;
+    display: grid;
+
+    &__wrapper {
+        position: relative;
+        >span {
+          position: absolute !important;
+          top: 0 !important;
+          left: 50% !important;
+          transform: translateX(-36%) !important;
+          height: 100% !important;
+        }
+        .img-rope {
+            position: absolute !important;
+            top: -100px !important;
+            // left: 50% !important;
+            transform: translateX(-36%) !important;
+            height: 100% !important;
+
+            @include breakpoint(sm) {
+                display: none;
+            }
+            
+        }
+    }
+
+    .featured-content {
+        margin: $spacer-xl 0;
+    }
+
+    .featured-graphics {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include breakpoint(md) {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48%;
+        }
+
+        @include breakpoint(sm) {
+            position: relative;
+            top: unset;
+            text-align: center;
+            width: auto;
+            transform: unset;
+        }
+    }
+
+    .featured-graphics--left {
+        right: auto;
+        left: 0;
+    }
+}
+
+.section-home-events {
+    background-color: $color-tertiary;
+    padding-bottom: 400px;
+    margin-bottom: -400px;
+
+    &:before {
+        content:"";
+        display: block;
+        height: 160px;
+        background: #ffffff url(/images/events/pub/bg-events-top.svg) no-repeat top center;
+        background-size: cover;
+    }
+
+    @include breakpoint(sm) {
+        padding-bottom: 200px;
+        margin-bottom: -100px;
+
+
+        &:before {
+            height: 100px;
+        }
+    }
+}

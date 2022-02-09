@@ -1,0 +1,135 @@
+// =============================================================================
+// Mixins
+// =============================================================================
+
+// String Replace
+@function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+// Font Face
+// 
+// Example:
+// @include font-face(Helvetica, fonts/Helvetica);
+// @include font-face("Helvetica Neue", fonts/HelveticaNeue, bold, italic);
+// @include font-face(Helvetica, fonts/Helvetica, 500, normal, eot woff2 woff);
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+// Theme Transitions
+@mixin simple-transition($speed: '1x') {
+    // @if($speed: '1x') {
+    //   @include transition(all 0.5s);
+    // }
+
+    // @if($speed: '2x') {
+    //   @include transition(all 0.3s);
+    // }
+}
+
+// Box Shadow
+@mixin box-shadow($top, $left, $blur, $color, $inset:false, $spread:'') {
+	@if $inset {
+		// -webkit-box-shadow:inset $top $left $blur $color;
+		// -moz-box-shadow:inset $top $left $blur $color;
+		box-shadow:inset $top $left $blur $color;
+	} @else if($spread=='') {
+		// -webkit-box-shadow: $top $left $blur $color;
+		// -moz-box-shadow: $top $left $blur $color;
+		box-shadow: $top $left $blur $color;
+	} @else {
+		// -webkit-box-shadow: $spread $top $left $blur $color;
+		// -moz-box-shadow: $spread $top $left $blur $color;
+		box-shadow: $spread $top $left $blur $color;
+	}
+}
+
+// Responsive breakpoint mixin
+// ------------------------------
+// Usage:
+// 
+// @include breakpoint(lg) {
+//    <object-property: value>
+// }
+$breakpoint-xl: $screen-xl-min;
+$breakpoint-xxl: $screen-xxl-min;
+$breakpoint-lg: $screen-lg-min;
+$breakpoint-md: $screen-md-min;
+$breakpoint-sm: $screen-sm-min;
+$breakpoint-xsmax: $screen-xs-smax;
+$breakpoint-xs: $screen-xs-max;
+
+@mixin breakpoint($width) {
+    @if $width == xxl {
+        @media only screen and (min-width:$breakpoint-xxl) {
+            @content;
+        }
+    }
+    @else if $width == xl {
+        @media only screen and (max-width:$breakpoint-xl) {
+            @content;
+        }
+    }
+    @else if $width == lg {
+        @media only screen and (max-width:$breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $width == md {
+        @media only screen and (max-width:$breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $width == mdb {
+      @media only screen and (min-width:$breakpoint-sm) and (max-width:$breakpoint-md) {
+          @content;
+      }
+  }
+    @else if $width == sm {
+        @media only screen and (max-width:$breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $width == xsmax {
+        @media only screen and (max-width:$breakpoint-xsmax) {
+            @content;
+        }
+    }
+
+    @else if $width == xs {
+        @media only screen and (max-width:$breakpoint-xs) {
+            @content;
+        }
+    }
+}
