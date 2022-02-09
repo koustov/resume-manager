@@ -59,7 +59,12 @@ const ResumeListing = () => {
 								const Temps = allTemplates[k].component_template;
 
 								return (
-									<Grid item xs={2} key={ki} className={styles.snip1527}>
+									<Grid
+										item
+										xs={2}
+										key={ki}
+										className={styles.snip1527}
+										className='glass-button'>
 										<div className={styles.container}>
 											<div className={styles['rating-container']}>
 												<Rating
@@ -101,13 +106,38 @@ const ResumeListing = () => {
 													/>
 												</div>
 											</div>
-											<div className={styles['details-container']}>
+											{/* <div className={styles['details-container']}>
 												<div className={styles['details-wrapper']}>
 													<h3>
 														<span>{allTemplates[k].name}</span>
 													</h3>
 													<p>{allTemplates[k].description}</p>
 												</div>
+											</div> */}
+
+											<div className={styles['card_footer']}>
+												{/* <div className={styles['details-container']}> */}
+												<div className={styles['card_text']}>
+													<h5 className={styles['name']}>{allTemplates[k].name}</h5>
+													<h6 className={styles['description']}>
+														{allTemplates[k].description}
+													</h6>
+													{/* </div> */}
+												</div>
+												{/* <div className={styles['social_box']}>
+													<a href='#' style={{'--'}}'--i:1'>
+														<i className={styles['icon fa fa-facebook']}></i>
+													</a>
+													<a href='#' style='--i:2'>
+														<i className={styles['icon fa fa-twitter']}></i>
+													</a>
+													<a href='#' style='--i:3'>
+														<i className={styles['icon fa fa-youtube']}></i>
+													</a>
+													<a href='#' style='--i:4'>
+														<i className={styles['icon fa fa-pinterest']}></i>
+													</a>
+												</div> */}
 											</div>
 										</div>
 

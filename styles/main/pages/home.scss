@@ -1,560 +1,147 @@
-// Home Page Styles
-//
-// 
-
-// Variables for Home Page
-// 
-// About section featured image height
-$section-about-img-height: 469px;
-
-// Latest/Ongoing Events Height
-//
-// A fixed height is required for this section, because it overlaps section which is before and after it.
-$section-latest-height: 400px;
-
-// About
-.section-about {
-    .section-title-primary {
-        position: relative;
-        width: 50%;
-        min-height: $section-about-img-height;
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        z-index: 2;
-
-        @include breakpoint(md) {
-            display: block;
-            width: unset;
-            min-height: unset;
-            margin-top: $spacer-lg;
-            margin-bottom: $spacer-xl;
-        }
-    }
+.home-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  background: url(/images/logo.png) no-repeat center center local;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 5px 20px 0 hsl(212 15% 15%);
+  backdrop-filter: blur(10px);
+  background-origin: content-box;
+  padding: 1rem;
 }
 
-// History Overview
-.section-history-overview {
-    overflow: hidden;
-    background-color: darken($color-primary-dark, 4%);
-
-    .img-crowd {
-        text-align: center;
-        margin: 0 auto $spacer-xl auto;
-        height: 400px;
-        overflow: hidden;
-
-        @include breakpoint(md) {
-            height: 180px;
-            margin: 0 auto;
-        }
-
-        @include breakpoint(md) {
-            height: 120px;
-        }
-
-        svg {
-            transform: scale(0.8);
-
-            @include breakpoint(md) {
-                transform: scale(1.2);
-            }
-
-            [data-name="echo1"],
-            [data-name="voice1"]
-             {
-                opacity: 0;
-                animation: crowdCheeringSet1 5s ease-in-out infinite;
-            }
-
-            [data-name="echo2"],
-            [data-name="voice2"]
-             {
-                opacity: 0;
-                animation: crowdCheeringSet2 5s ease-in-out infinite;
-            }
-
-            [data-name="echo3"],
-            [data-name="voice3"]
-             {
-                opacity: 0;
-                animation: crowdCheeringSet3 5s ease-in-out infinite;
-            }
-
-            [data-name="people"] {
-                animation: crowdCheering 3s ease-in-out infinite;
-            }
-        }
-    }
-
-    .section-history__title {
-        margin: 0;
-        padding: 0;
-        font-family: $font-family-secondary;
-        font-size: 36vh;
-        color: darken($color-primary-dark, 4%);
-        text-align: center;
-        line-height: 0.3;
-        letter-spacing: -0.03em;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: $color-primary-bright;
-        opacity: 0.6;
-
-        @include breakpoint(md) {
-            font-size: 24vw;
-            line-height: 0.16;
-        }
-    }
+.glass-panel {
+  color: #fff;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  // width: 100%;
+  border-radius: 15px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px 0 hsl(212 15% 15%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-// Latest/Ongoing Events
-.section-latest-events {
-    $color-top: darken($color-primary-dark, 4%);
-    $color-bottom: $color-primary;
-
-    position: relative;
-    z-index: 1;
-    // transform: translateY(-50%);
-    margin-top: -($section-latest-height/1.98);
-    margin-bottom: -($section-latest-height/1.98);
-    background: transparent;
-    // transform: translateY(-50%);
-
-    // background: -moz-linear-gradient(top,  $color-top 0%, $color-top 50%, $color-bottom 50%, $color-bottom 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(top,  $color-top 0%, $color-top 50%,$color-bottom 50%, $color-bottom 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(to bottom,  $color-top 0%, $color-top 50%,$color-bottom 50%, $color-bottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    @include breakpoint(lg) {
-        margin-top: -($section-latest-height/1.8);
-        margin-bottom: -($section-latest-height/1.8);
-    }
-
-    @include breakpoint(md) {
-        margin-top: -32px;
-        margin-bottom: 0;
-        background: -moz-linear-gradient(top,  $color-top 0%, $color-top 50%, $color-bottom 50%, $color-bottom 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  $color-top 0%, $color-top 50%,$color-bottom 50%, $color-bottom 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  $color-top 0%, $color-top 50%,$color-bottom 50%, $color-bottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    }
-    
-    & &__container {
-        position: relative;
-        // height: $section-latest-height;
-        background-color: $color-white;
-        padding: $spacer-xl*1.6 $spacer-xl*2;
-        @include box-shadows(0, 12px, 0, 0, rgba(0,0,0,0.3));
-        // box-shadow: 12px 0 0 rgba(0,0,0,0.3);
-
-        @include breakpoint(md) {
-            padding: $spacer-xl;
-        }
-
-        @include breakpoint(sm) {
-            width: calc(90% - 20px);
-        }
-
-        &:before {
-            position: absolute;
-            content: "";
-            width: 20px;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            transform: translateX(-100%);
-            background: url(../../../images/uifocus/img-ticket-corner-left.svg) repeat center right;
-        }
-
-        &:after {
-            position: absolute;
-            content: "";
-            width: 20px;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            transform: translateX(100%);
-            background: url(../../../images/uifocus/img-ticket-corner-right.svg) repeat center left;
-        }
-    }
+.glass-button {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-// History Section - Events
-.section-history-events {
-    position: relative;
-    padding: $section-latest-height/1.5 0 $spacer-xxl*1.6 0;
-    background-color: #0B0B8F;
-
-    &:before {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url(../../../images/uifocus/img-circular-lines.svg) repeat center center;
-    }
-
-    &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url(../../../images/uifocus/img-abstract-curves.svg) no-repeat center center;
-        background-size: cover;
-        mix-blend-mode: overlay;
-        opacity: 0.7;
-    }
-
-    .container {
-        position: relative;
-        z-index: 1;
-    }
-
+.glass-button:hover {
+  background-color: rgba(255,255,255,0.2);
 }
 
-// Events List
-.list-events {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    .list-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: $spacer-lg;
-
-        &__thumb {
-            width: 86px;
-            height: 86px;
-            border-radius: 8px;
-            border-top-left-radius: 36px;
-            border-bottom-right-radius: 36px;
-            @include box-shadows(8px, 8px, 0, 0, $color-secondary);
-            margin-right: $spacer-md;
-            overflow: hidden;
-        }
-
-        &__content {
-            margin-top: -0.8em;
-        }
-
-        &__type {
-            display: inline-block;
-            margin-right: $spacer-sm;
-            font-family: $font-family-secondary;
-            font-size: $theme-fs-nm--l;
-            color: $color-secondary;
-        }
-
-        &__date {
-            opacity: 0.5;
-            font-size: $theme-fs-xs;
-            color: $color-white;
-        }
-
-        &__name {
-            font-family: $font-family-secondary;
-            font-size: $theme-fs-md*0.92;
-            color: $color-white;
-            line-height: 1;
-
-            background-image: linear-gradient($color-secondary, $color-secondary);
-            background-position: 0% 100%;
-            background-repeat: no-repeat;
-            background-size: 0% 4px;
-            transition: background-size .3s;
-            text-decoration: none;
-
-            &:hover,
-            &:focus {
-                text-decoration: none;
-                background-size: 100% 4px;
-            }
-        }
-    }
+/* Extra styles for demo */
+/* Article:  https://superdevresources.com/glassmorphism-ui-css/ */
+body {
+  background: url(/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
-
-
-// History Count Overview
-.history-count-overview {
-    position: relative;
-    z-index: 1;
-    margin: $spacer-xl $spacer-xl 0 $spacer-xl;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    @include breakpoint(md) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: $spacer-lg;
-        margin-bottom: $spacer-xl;
-    }
-
-    .count-item {
-        font-family: $font-family-secondary;
-        text-align: center;
-
-        .count__value {
-            font-size: 84px;
-            color: $color-secondary;
-            text-align: center;
-            line-height: 1;
-
-            @include breakpoint(md) {
-                font-size: $theme-fs-xxl;
-            }
-        }
-
-        .count__label {
-            font-size: 22px;
-            color: $color-white;
-            line-height: 1;
-            text-align: center;
-
-            @include breakpoint(md) {
-                font-size: $theme-fs-nm;
-            }
-        }
-
-        .count__infinity {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
+.glass-panel {  
+  max-width: 600px;
 }
 
-// About Tabs
-.tabs-about {
-    border: 0;
-    width: 80%;
-    flex-direction: column;
-    margin-bottom: $spacer-lg;
-
-    @include breakpoint(md) {
-        flex-direction: row;
-        grid-column-gap: $spacer-lg;
-    }
-
-    &-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-
-        @include breakpoint(md) {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .nav-item .nav-link {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: 0 0 $spacer-nm 0;
-        padding: 0;
-        border: 0;
-        font-family: $font-family-secondary;
-        font-size: $theme-fs-lg;
-        color: $color-grey-light;
-        @include simple-transition(2x);
-
-        @include breakpoint(md) {
-            flex-direction: column;
-            font-size: $theme-fs-md;
-        }
-
-        @include breakpoint(sm) {
-            font-size: $theme-fs-nm--l;
-        }
-
-        &:after {
-            content: "";
-            height: 6px;
-            flex: 0;
-            width: 0;
-            margin-left: $spacer-sm;
-            background-color: $color-secondary;
-            @include simple-transition(2x);
-        }
-
-        &:hover,
-        &:focus {
-            color: $color-primary-dark;
-        }
-
-        &.active {
-            color: $color-primary;
-
-            &:after {
-                flex: auto;
-                background-color: $color-secondary;
-
-                @include breakpoint(md) {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    & + .tab-content {
-        margin-top: -($section-about-img-height);
-        padding: 0 $spacer-nm*4 0 $spacer-nm*4;
-        z-index: 1;
-
-        @include breakpoint(md) {
-            margin-top: 0;
-            padding: 0;
-        }
-
-        .content-img {
-            margin-bottom: $spacer-xl;
-            text-align: right;
-
-            @include breakpoint(md) {
-                text-align: unset;
-            }
-
-            @include breakpoint(sm) {
-                max-width: 80%;
-            }
-        }
-
-        p {
-            font-size: $theme-fs-lg;
-            font-weight: $theme-fw-light;
-            color: $color-grey-light;
-
-            @include breakpoint(md) {
-                font-size: $theme-fs-md;
-            }
-
-            @include breakpoint(sm) {
-                font-size: $theme-fs-nm--l;
-                color: $color-grey;
-            }
-
-            strong {
-                font-weight: $theme-fw-bold;
-                color: $color-grey;
-            }
-        }
-    }
+.glass-button {
+  margin: 15px;
+  margin-top: 40px;
 }
 
-// About - Why UI.Fcous
-.section-about-why{
-    $featured-spacer: 180px;
-
-    position: relative;
-    margin-top: -($featured-spacer/2.6);
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    @include breakpoint(md) {
-        margin-top: $spacer-lg;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    @include breakpoint(sm) {
-        grid-template-columns: unset;
-        grid-template-rows: unset;
-        grid-row-gap: $spacer-nm;
-        margin-bottom: $spacer-md;
-    }
-
-    .why-primary {
-        height: 420px;
-        padding: $spacer-lg $spacer-xl;
-        background: $color-secondary url(../../../images/uifocus/img-knowledge.svg) no-repeat center 140px;
-        overflow: hidden;
-
-        @include breakpoint(md) {
-            height: auto;
-            grid-row: 1 / 3;
-        }
-
-        @include breakpoint(sm) {
-            grid-row: unset;
-            min-height: 300px;
-        }
-
-        .why-img {
-            display: none;
-            position: absolute;
-            top: 0px;
-            transform: translateY(25%);
-        }
-    }
-
-    .why-secondary {
-        position: relative;
-        // min-height: 300px;
-        width: auto;
-        margin-top: $featured-spacer;
-        padding: $spacer-lg $spacer-xl;
-        background: $color-primary url(../../../images/uifocus/img-hourglass.png) no-repeat center center;
-        background-size: cover;
-        background-blend-mode: soft-light;
-
-        @include breakpoint(md) {
-            margin-top: 0;
-            min-height: unset;
-        }
-
-        @include breakpoint(sm) {
-            margin-top: 0;
-            grid-row: 2 / 3;
-        }
-
-    }
-
-    .why-tertiary {
-        // min-height: 300px;
-        margin-top: $featured-spacer;
-        padding: $spacer-lg $spacer-xl;
-        background: $color-primary-dark url(../../../images/uifocus/img-skills.png) no-repeat center center;
-        background-size: cover;
-        background-blend-mode: soft-light;
-
-        @include breakpoint(md) {
-            grid-column: 2;
-            margin-top: 0;
-        }
-
-        @include breakpoint(sm) {
-            grid-column: unset;
-        }
-    }
+h1, h1 a {
+  min-height: 120px;
+  width: 90%;
+  max-width: 700px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 60px;
+  color: rgba(255,255,255,0.8);
 }
 
-// Testimonials
-.section-testimonials {
-    position: relative;
-    min-height: 60vh;
-    padding: $spacer-xxl*1.6 0;
-    background: $color-secondary;
-    overflow: hidden;
+p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  color: rgba(255,255,255,0.6);
+}
 
-    // &:before {
-    //     content: "";
-    //     background: url(../../../images/uifocus/img-speech-bubbles.svg) no-repeat center;
-    // }
+.card-container {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  div {
+    margin: 16px;
+    flex:1
+  }
+}
+.glass-card {
+  padding: 30px 35px 35px;
+  display: grid;
+  justify-items: center;
+  z-index: 2;
+  position: relative;
+  margin-inline: 15px;
 
-    .section-bg-img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 
-    .section-bg-img-dots {
-        position: absolute;
-        top: 20%;
-        right: -2%;
-    }
+  /** GLASSMORPHISM **/
+
+  background-color: hsl(var(--clr-grey-alt) /.80);
+  box-shadow: 0 5px 20px 0 hsl(212 15% 15%);
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  color: rgba(255,255,255,0.8);
+  padding: 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .glass-card {
+    background-color: hsl(var(--clr-white) /.12);
+    -webkit-backdrop-filter: blur(10px);
+
+  backdrop-filter: blur(10px);
+  }
 }
